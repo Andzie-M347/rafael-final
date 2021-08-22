@@ -18,7 +18,7 @@ body {
     line-height: 1.8;
     color: var(--text-color);
     font-family: 'Lato',
-    sans-serif;
+        sans-serif;
 }
 
 
@@ -38,6 +38,20 @@ li {
         fill: var(--accent-color);
         height: 1.9rem;
         width: 1.9rem;
+    }
+}
+
+
+.button {
+    padding: .45em 2em;
+    border-radius: 9rem;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+
+    &__submit {
+        background-color: var(--alt-color);
     }
 }
 
@@ -88,9 +102,9 @@ li {
         &__menu {
 
             &--menu-list {
-                 @media screen and (max-width: 991px) {
+                @media screen and (max-width: 991px) {
                     display: none;
-                 }
+                }
             }
 
 
@@ -144,30 +158,90 @@ li {
 
 .footer {
     &__main {
-         padding: 4rem 0 7.2rem 0;
-         background-color: var(--accent-color);
-         color: #fff;
+        padding: 4rem 0 7.2rem 0;
+        background-color: var(--accent-color);
+        color: #fff;
 
 
-         p {
-             margin: 0 0 1rem;
-             font-size: 1.35rem;
-         }
+        p {
+            margin: 0 0 1rem;
+            font-size: 1.35rem;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        li {
+            border-bottom: .3px dotted var(--alt-color);
+
+            a {
+                font-size: 1.2rem;
+                font-weight: 400;
+
+            }
+        }
 
 
-         li {
-             border-bottom: .3px solid var(--alt-color);
-             a {
-                 font-size: 1.3rem;
-
-             }
-         }
-         
-
-         .row > div {
+        .row>div {
             //  border-right: .5px solid #034c7071;
-             padding: 1.5rem;
-         }
+            padding: 1.5rem;
+        }
+
+        .form-control {
+            clip-path: polygon(50% 0%, 100% 0, 100% 81%, 89% 100%, 0 100%, 0% 60%, 0 0);
+            clip-path: polygon(50% 0%, 100% 0, 100% 81%, 93% 100%, 0 100%, 0% 60%, 0 0);
+            padding: 1em 2em;
+            background: #2d73a8;
+            border-color: #2d73a8;
+            border-radius: 0;
+        }
+
+        label {
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+
+        .blog {
+           
+
+            &__title {
+                border-bottom: 1px solid #fff;
+                margin-bottom: 1rem;
+            }
+
+            &__image {
+                flex: 0 0 50%;
+
+                .img-thumbnail {
+                    background-color: #2d73a8;
+                    border-color: #2d73a8;
+                }
+            }
+
+            figcaption {
+                 flex: 0 0 50%;
+                padding: .5rem 1rem;
+                svg {
+                    height: 1.8rem;
+                    width: 1.8rem;
+                    fill: #fff;
+                }
+            }
+
+            
+
+
+
+            figcaption {
+                clip-path: polygon(50% 0%, 100% 0, 100% 81%, 84% 100%, 0 100%, 0% 60%, 0 0);
+                background: var(--alt-color);
+                color: #fff;
+                font-size: 1.2rem;
+            }
+        }
     }
 
 
@@ -180,6 +254,9 @@ li {
         font-weight: 700;
         font-size: 2.4rem;
     }
+
+
+
 }
 
 #to-top {

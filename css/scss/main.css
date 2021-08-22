@@ -33,6 +33,19 @@ li {
   width: 1.9rem;
 }
 
+.button {
+  padding: .45em 2em;
+  border-radius: 9rem;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.button__submit {
+  background-color: var(--alt-color);
+}
+
 /* Header */
 #main-header .topbar {
   background: var(--gradient);
@@ -106,16 +119,75 @@ li {
   font-size: 1.35rem;
 }
 
+.footer__main ul {
+  padding: 0;
+}
+
 .footer__main li {
-  border-bottom: 0.3px solid var(--alt-color);
+  border-bottom: 0.3px dotted var(--alt-color);
 }
 
 .footer__main li a {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
 .footer__main .row > div {
   padding: 1.5rem;
+}
+
+.footer__main .form-control {
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 81%, 89% 100%, 0 100%, 0% 60%, 0 0);
+          clip-path: polygon(50% 0%, 100% 0, 100% 81%, 89% 100%, 0 100%, 0% 60%, 0 0);
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 81%, 93% 100%, 0 100%, 0% 60%, 0 0);
+          clip-path: polygon(50% 0%, 100% 0, 100% 81%, 93% 100%, 0 100%, 0% 60%, 0 0);
+  padding: 1em 2em;
+  background: #2d73a8;
+  border-color: #2d73a8;
+  border-radius: 0;
+}
+
+.footer__main label {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.footer__main .blog__title {
+  border-bottom: 1px solid #fff;
+  margin-bottom: 1rem;
+}
+
+.footer__main .blog__image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.footer__main .blog__image .img-thumbnail {
+  background-color: #2d73a8;
+  border-color: #2d73a8;
+}
+
+.footer__main .blog figcaption {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding: .5rem 1rem;
+}
+
+.footer__main .blog figcaption svg {
+  height: 1.8rem;
+  width: 1.8rem;
+  fill: #fff;
+}
+
+.footer__main .blog figcaption {
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 81%, 84% 100%, 0 100%, 0% 60%, 0 0);
+          clip-path: polygon(50% 0%, 100% 0, 100% 81%, 84% 100%, 0 100%, 0% 60%, 0 0);
+  background: var(--alt-color);
+  color: #fff;
+  font-size: 1.2rem;
 }
 
 .footer__copyright {
