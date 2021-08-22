@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 :root {
   --accent-color: #3fa4f0;
   --alt-color: #034c70;
@@ -14,11 +15,16 @@ body {
   font-size: 1.5rem;
   line-height: 1.8;
   color: var(--text-color);
+  font-family: 'Lato', sans-serif;
 }
 
 a {
   text-decoration: none;
   color: var(--text-color);
+}
+
+li {
+  list-style: none;
 }
 
 .site-socials svg {
@@ -89,6 +95,39 @@ a {
 /* ================================================================= 
 ============== Footer
 ============== */
+.footer__main {
+  padding: 4rem 0 7.2rem 0;
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+.footer__main p {
+  margin: 0 0 1rem;
+  font-size: 1.35rem;
+}
+
+.footer__main li {
+  border-bottom: 0.3px solid var(--alt-color);
+}
+
+.footer__main li a {
+  font-size: 1.3rem;
+}
+
+.footer__main .row > div {
+  padding: 1.5rem;
+}
+
+.footer__copyright {
+  background: var(--gradient);
+  padding: .8rem 0;
+}
+
+.footer__title {
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
 #to-top {
   position: absolute;
   right: 3rem;
