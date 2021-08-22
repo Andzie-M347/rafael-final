@@ -3,11 +3,18 @@
 :root {
     --accent-color: #3fa4f0;
     --alt-color: #034c70;
+    --tertiary-color: #2d73a8;
     --text-color: rgba(0, 0, 0, .75);
     --grey: #e5e5e5;
     --gradient: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(234, 234, 234, 1) 100%);
 }
 
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 html {
     font-size: 62.5%;
@@ -25,6 +32,11 @@ body {
 a {
     text-decoration: none;
     color: var(--text-color);
+}
+
+
+ul {
+    padding: 0;
 }
 
 
@@ -152,6 +164,117 @@ li {
 
 
 /* ================================================================= 
+============== Event Section
+============== */
+
+
+.event-section {
+    padding: 5.2rem;
+
+
+
+    &__events {
+        color: #fff;
+        border-radius: 12px;
+
+        &--title {
+            margin-bottom: 2rem;
+        }
+
+        .events {
+
+            &__title {
+                font-size: 2.2rem !important;
+            }
+
+            &__header {
+                color: var(--grey);
+            }
+
+            span {
+                display: block;
+            }
+
+
+            h2 {
+                margin-right: 2rem;
+                font-size: 3rem;
+            }
+
+
+            li {
+                display: flex;
+                flex: 0 0 80%;
+
+                &::before {
+                    content: "";
+                    flex: 0 0 10%;
+                    width: 0;
+                    height: 0;
+                    border-bottom: 3.5rem solid var(--accent-color);
+                    border-left: 3.5rem solid transparent;
+                    margin-right: 1rem;
+                }
+            }
+        }
+
+    }
+
+
+    &__video,
+    &__events {
+        padding: 12rem 5rem;
+        height: 38rem;
+        clip-path: polygon(90% 15%, 100% 0, 100% 90%, 90% 100%, 0 100%, 0% 60%, 0 15%);
+        background-color: var(--alt-color);
+    }
+
+
+    &__video {
+        transform: rotate(180deg);
+        position: relative;
+        border-radius: 12px;
+
+        .video-player {
+            // clip-path: polygon(13% 0, 93% 0, 100% 11%, 100% 93%, 89% 100%, 11% 100%, 0 94%, 0 11%);
+            border-radius: 12px;
+            background: var(--accent-color);
+            position: absolute;
+            margin: 4rem;
+            top: 2.5rem;
+            transform: rotate(-180deg);
+            left: 1.5rem;
+            bottom: 1.5rem;
+            right: 2.5rem;
+
+            span {
+                display: inline-block;
+                // line-height: 7rem;
+                text-align: center;
+                width: 7rem;
+                height: 7rem;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                 animation: pulse 2s infinite;
+                display: inline-block;
+                border: 5px solid var(--alt-color);
+
+                svg {
+                    width: 6rem;
+                    height: 6rem;
+                    fill: var(--alt-color);
+                }
+            }
+
+        }
+    }
+}
+
+
+/* ================================================================= 
 ============== Footer
 ============== */
 
@@ -192,8 +315,8 @@ li {
             clip-path: polygon(50% 0%, 100% 0, 100% 81%, 89% 100%, 0 100%, 0% 60%, 0 0);
             clip-path: polygon(50% 0%, 100% 0, 100% 81%, 93% 100%, 0 100%, 0% 60%, 0 0);
             padding: 1em 2em;
-            background: #2d73a8;
-            border-color: #2d73a8;
+            background: var(--tertiary-color);
+            border-color: var(--tertiary-color);
             border-radius: 0;
         }
 
@@ -205,7 +328,7 @@ li {
 
 
         .blog {
-           
+
 
             &__title {
                 border-bottom: 1px solid #fff;
@@ -216,14 +339,15 @@ li {
                 flex: 0 0 50%;
 
                 .img-thumbnail {
-                    background-color: #2d73a8;
-                    border-color: #2d73a8;
+                    background-color: var(--tertiary-color);
+                    border-color: var(--tertiary-color);
                 }
             }
 
             figcaption {
-                 flex: 0 0 50%;
+                flex: 0 0 50%;
                 padding: .5rem 1rem;
+
                 svg {
                     height: 1.8rem;
                     width: 1.8rem;
@@ -231,7 +355,7 @@ li {
                 }
             }
 
-            
+
 
 
 
@@ -278,5 +402,18 @@ li {
         text-transform: uppercase;
         letter-spacing: .2rem;
         font-size: 1rem;
+    }
+}
+
+
+
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    }
+
+    100% {
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
     }
 }
