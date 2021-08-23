@@ -8,6 +8,7 @@
     <title>Rafael &mdash; The best WordPress Theme</title>
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/scss/main.css">
 </head>
 
@@ -95,26 +96,101 @@
         </nav>
     </header><!-- /.header -->
 
+    <section class="partners-section">
+        <div class="container">
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/clients/logo_icon1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/logo_icon2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/logo_icon3.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/logo_icon4.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/logo_icon5.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/logo_icon5.jpg" alt="">
+                    </div>
+
+                </div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+            </div>
+        </div>
+    </section>
+
 
     <section class="services-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
+
+
                     <div class="services-section__testimonials">
-                        <div class="services-section__image">
-                            <img src="" alt="">
-                        </div>
 
-                        <blockquote>
-                            “Ntesque nibh dictum sagittis. Nunc tincidunt rhoncus mi. Suspendisse tristique sodales
-                            malesuada.”
+                        <div class="swiper-container testimonials">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="services-section__image">
+                                        <img src="" alt="">
+                                    </div>
 
-                            <div class="text-right">
-                                &mdash; John Smith, CEO
+                                    <blockquote>
+                                        “Ntesque nibh dictum sagittis. Nunc tincidunt rhoncus mi. Suspendisse tristique
+                                        sodales
+                                        malesuada.”
 
-                                <p>Big Brother Company</p>
+                                        <div class="text-right">
+                                            &mdash; John Smith, CEO
+
+                                            <p>Big Brother Company</p>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="services-section__image">
+                                        <img src="" alt="">
+                                    </div>
+
+                                    <blockquote>
+                                        “Ntesque nibh dictum sagittis. Nunc tincidunt rhoncus mi. Suspendisse tristique
+                                        sodales
+                                        malesuada.”
+
+                                        <div class="text-right">
+                                            &mdash; John Doe, CEO
+
+                                            <p>Big Brother Company</p>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="services-section__image">
+                                        <img src="" alt="">
+                                    </div>
+
+                                    <blockquote>
+                                        “Ntesque nibh dictum sagittis. Nunc tincidunt rhoncus mi. Suspendisse tristique
+                                        sodales
+                                        malesuada.”
+
+                                        <div class="text-right">
+                                            &mdash; Sara Smith, CEO
+
+                                            <p>Big Brother Company</p>
+                                        </div>
+                                    </blockquote>
+                                </div>
                             </div>
-                        </blockquote>
+                            <div class="swiper-pagination py-5"></div>
+                        </div>
                     </div>
                 </div>
 
@@ -123,7 +199,8 @@
 
                         <header class="services-section__header">
                             <h2>What we do?</h2>
-                            <h4>The full service we are offering is specifically designed to meet your business needs and projects.</h4>
+                            <h4>The full service we are offering is specifically designed to meet your business needs
+                                and projects.</h4>
                         </header>
 
                         <div class="row pb-3">
@@ -136,13 +213,14 @@
                                     <div class="service-box__content">
                                         <h3>Analytics</h3>
 
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vero laborum iste inventore!</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vero laborum
+                                            iste inventore!</p>
                                     </div>
 
                                 </div><!-- /.Service box -->
                             </div>
                             <div class="col">
-                                 <div class="service-box">
+                                <div class="service-box">
                                     <div class="service-box__icon">
                                         <i class="fad fa-megaphone"></i>
                                     </div>
@@ -150,7 +228,8 @@
                                     <div class="service-box__content">
                                         <h3>Marketing</h3>
 
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vero laborum iste inventore!</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vero laborum
+                                            iste inventore!</p>
                                     </div>
 
                                 </div><!-- /.Service box -->
@@ -158,8 +237,8 @@
                         </div>
 
                         <div class="row">
-                              <div class="col">
-                                 <div class="service-box">
+                            <div class="col">
+                                <div class="service-box">
                                     <div class="service-box__icon">
                                         <i class="fad fa-browser"></i>
                                     </div>
@@ -167,13 +246,14 @@
                                     <div class="service-box__content">
                                         <h3>Development</h3>
 
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vero laborum iste inventore!</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vero laborum
+                                            iste inventore!</p>
                                     </div>
 
                                 </div><!-- /.Service box -->
                             </div>
-                              <div class="col">
-                                 <div class="service-box">
+                            <div class="col">
+                                <div class="service-box">
                                     <div class="service-box__icon">
                                         <i class="fad fa-layer-plus"></i>
                                     </div>
@@ -181,7 +261,8 @@
                                     <div class="service-box__content">
                                         <h3>Graphics</h3>
 
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vero laborum iste inventore!</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vero laborum
+                                            iste inventore!</p>
                                     </div>
 
                                 </div><!-- /.Service box -->
@@ -516,6 +597,10 @@
             <span>to top</span>
         </div>
     </div>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
