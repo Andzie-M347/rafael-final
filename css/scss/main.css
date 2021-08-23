@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 :root {
   --accent-color: #3fa4f0;
   --alt-color: #034c70;
@@ -20,7 +21,7 @@ html {
 }
 
 body {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 1.8;
   color: var(--text-color);
   font-family: 'Lato', sans-serif;
@@ -41,7 +42,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
+  font-family: 'DM Serif Display', serif;
 }
 
 li {
@@ -52,6 +53,10 @@ li {
   fill: var(--accent-color);
   height: 1.9rem;
   width: 1.9rem;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .button {
@@ -124,6 +129,81 @@ li {
   #main-header .navigation__menu--toggler {
     display: none;
   }
+}
+
+/* ================================================================= 
+============== Service Section
+============== */
+.services-section {
+  padding: 5.3rem 0;
+}
+
+.services-section__header {
+  padding: 2em 0;
+}
+
+.services-section__header h2 {
+  font-size: 3.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.services-section__header h4 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.services-section__image {
+  background: var(--alt-color);
+  -webkit-clip-path: polygon(6% 0, 94% 0, 100% 0, 100% 93%, 94% 100%, 6% 100%, 0 100%, 0 9%);
+          clip-path: polygon(6% 0, 94% 0, 100% 0, 100% 93%, 94% 100%, 6% 100%, 0 100%, 0 9%);
+  height: 17rem;
+  margin-bottom: 2rem;
+}
+
+.services-section__testimonials {
+  position: relative;
+  max-width: 60%;
+  height: 100%;
+  background: var(--accent-color);
+  padding: 2.2rem 3.6rem;
+  margin-left: 10rem;
+  color: #fff;
+}
+
+.services-section__testimonials::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 13px solid transparent;
+  border-top-color: var(--accent-color);
+  border-bottom: 0;
+  margin-left: -13px;
+  margin-bottom: -13px;
+}
+
+.services-section .service-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.services-section .service-box__icon {
+  display: inline-block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 10%;
+          flex: 0 0 10%;
+  margin-right: 2rem;
+  -webkit-box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+}
+
+.services-section .service-box__icon i {
+  font-size: 3rem;
+  color: var(--alt-color);
 }
 
 /* ================================================================= 
