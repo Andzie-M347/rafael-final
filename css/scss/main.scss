@@ -86,6 +86,19 @@ li {
     }
 }
 
+
+
+
+@media (min-width: 1200px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: 960px;
+    }
+}
+
 /* Header */
 
 #main-header {
@@ -182,11 +195,98 @@ li {
 // }
 
 
+
+/* ================================================================= 
+============== Showcase Section
+============== */
+
+.showcase {
+    .container {
+        background: var(--alt-color);
+        background-image: linear-gradient(15deg, var(--accent-color) 0%, var(--alt-color) 74%);
+        padding: 17rem 0;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        bottom: 0 !important;
+        top: unset;
+
+
+        &::after {
+            content: "";
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 10%;
+            flex: 0 0 10%;
+            width: 0;
+            height: 0;
+            border-bottom: 3.5rem solid var(--accent-color);
+            border-left: 3.5rem solid transparent;
+            margin-right: 1rem;
+        }
+
+    }
+
+    .swiper-button-prev {
+        left: 3rem;
+        &::after {
+            transform: rotate(180deg);
+        }
+    }
+
+    .swiper-button-next {
+        right: 3rem;
+
+        &::after {
+            transform: rotate(270deg);
+        }
+    }
+
+    .swiper-pagination-fraction {
+        left: 3rem;
+        color: #fff;
+        text-orientation: upright;
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
 /* ================================================================= 
 ============== Partners Section
 ============== */
 .partners-section {
-    padding: 2rem 0;
+    padding: 3rem 0;
 }
 
 
@@ -312,7 +412,6 @@ li {
 
     &__events {
         color: #fff;
-        border-radius: 12px;
 
         &--title {
             margin-bottom: 2rem;
@@ -342,6 +441,7 @@ li {
             li {
                 display: flex;
                 flex: 0 0 80%;
+                margin-bottom: 2.2rem;
 
                 &::before {
                     content: "";
@@ -370,23 +470,21 @@ li {
     &__video {
         transform: rotate(180deg);
         position: relative;
-        border-radius: 12px;
 
         .video-player {
-            // clip-path: polygon(13% 0, 93% 0, 100% 11%, 100% 93%, 89% 100%, 11% 100%, 0 94%, 0 11%);
-            border-radius: 12px;
             background: var(--accent-color);
             position: absolute;
-            margin: 4rem;
-            top: 2.5rem;
+            clip-path: polygon(6% 0, 94% 0, 100% 0, 100% 93%, 94% 100%, 6% 100%, 0 100%, 0 9%);
+            margin-top: 6rem;
+            top: 4.5rem;
+            -webkit-transform: rotate(-180deg);
             transform: rotate(-180deg);
-            left: 1.5rem;
-            bottom: 1.5rem;
-            right: 2.5rem;
+            left: 3.5rem;
+            bottom: 3.5rem;
+            right: 4.5rem;
 
             span {
                 display: inline-block;
-                // line-height: 7rem;
                 text-align: center;
                 width: 7rem;
                 height: 7rem;
@@ -527,6 +625,7 @@ li {
     display: flex;
 
     cursor: pointer;
+
     .triangle-shape {
         width: 0;
         height: 0;

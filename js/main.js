@@ -24,6 +24,18 @@ var swiper = new Swiper(".testimonials", {
 
 });
 
+
+var swiper = new Swiper(".showcase", {
+    pagination: {
+        el: ".showcase-pagination",
+        type: "fraction",
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
 // Smooth Scroll
 const toTop = document.getElementById('to-top')
 top.addEventListener('scroll', {
@@ -31,4 +43,3 @@ top.addEventListener('scroll', {
     left: 0,
     behavior: 'smooth'
 })
-
